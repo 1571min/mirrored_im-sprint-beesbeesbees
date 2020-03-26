@@ -8,6 +8,8 @@
   },
   "scripts": {
     "test": "mocha test/**/*.js",
+    "test:pseudo": "mocha test/pseudoclassical/*.js",
+    "test:es6": "mocha test/es6/*.js",
     "precommit": "lint-staged",
     "lint": "eslint src/",
     "submit": "node .travis/submit.js"
