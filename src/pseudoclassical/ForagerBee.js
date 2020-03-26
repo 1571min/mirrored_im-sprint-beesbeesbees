@@ -7,12 +7,16 @@ var ForagerBee = function() {
   this.color = this.color;
   this.canFly = true;
   this.treasureChest = [];
-  this.forage = function() {
-    this.treasureChest.push('treasure');
-  };
+  // this.forage = function() {
+  //   this.treasureChest.push('treasure');
+  // };
 };
 
 ForagerBee.prototype = Object.create(Bee.prototype);
 ForagerBee.prototype.constructor = ForagerBee;
+
+ForagerBee.prototype.forage = function() {
+  this.treasureChest.push('treasure');
+};
 
 module.exports = ForagerBee;
